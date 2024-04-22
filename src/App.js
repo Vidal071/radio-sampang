@@ -14,10 +14,10 @@ function MusicPlayer() {
   return (
     <div className="App">
       <div className="background-container" style={{backgroundImage: `url(${Sampang})`, backgroundSize: 'cover'}}>
+        <div className="container">
         <header className="App-header">
           <h1>Radio Sampang</h1>
         </header>
-        <div className="container">
           <div className="radio-player">
             <div className="image-container">
               {isPlaying ? (
@@ -26,7 +26,7 @@ function MusicPlayer() {
                 <img src={Piringans} alt="Piringan Hitam" />
               )}
             </div>
-            <h2>Dengarkan sekarang</h2>
+            <h2 style={{color :"white"}}>Dengarkan sekarang</h2>
             <audio controls onPlay={() => setIsPlaying(true)} onPause={() => setIsPlaying(false)}>
               <source src={Sound} type="audio/mpeg" />
             </audio>
