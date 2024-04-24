@@ -1,3 +1,5 @@
+/* MusicPlayer.css */
+
 .App {
   text-align: center;
 }
@@ -9,7 +11,12 @@
 
 .background-container {
   position: relative;
+  height: 100vh; /* Mengisi layar dengan konten */
+  background-size: cover; /* Menggunakan cover untuk memastikan latar belakang menyesuaikan diri dengan kontainer */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
 
 .background-container::before {
   content: '';
@@ -22,12 +29,13 @@
 }
 
 .container {
-  max-width: 800px; 
-  height: 620px;
-  margin: 20px auto;
+  max-width: 100%; /* Menggunakan maksimum lebar 100% agar kontainer responsif */
+  height: 100%; /* Mengisi layar dengan konten */
+  margin: 0 auto; /* Mengatur margin secara otomatis untuk memusatkan */
   padding: 0 20px;
   position: relative;
 }
+
 
 
 .radio-player {
@@ -36,10 +44,10 @@
   box-shadow: 0 2px 5px rgba(246, 246, 246, 0.1);
 }
 .rotate {
-  animation: rotate 2s linear infinite;
+  animation: rotation 2s infinite linear;
 }
 
-@keyframes rotate {
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
@@ -47,13 +55,12 @@
     transform: rotate(360deg);
   }
 }
+
 .play-pause-button {
   position: absolute;
   bottom: 10px;
 }
-.image-container {
-  position: relative;
-}
+
 
 .play-button {
   position: absolute;
@@ -69,9 +76,7 @@
   color: white;
   font-size: 48px; /* Adjust the size of the icon */
 }
-.image-container {
-  position: relative;
-}
+
 
 .play-button,
 .pause-button {
@@ -89,4 +94,15 @@
   color: white;
   font-size: 48px; /* Adjust the size of the icon */
 }
+.image-container {
+  position: relative;
+}
 
+.image-container img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
