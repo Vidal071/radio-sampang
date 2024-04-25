@@ -20,7 +20,7 @@ function MusicPlayer() {
     } else {
       audio.play();
       setIsPlaying(true);
-      setImageSrc(Piringans); // Mengubah gambar saat tombol play ditekan
+      setImageSrc(Piringans); // Change image when play button is clicked
     }
     toggleAnimation(); 
   };
@@ -28,7 +28,7 @@ function MusicPlayer() {
   const handlePause = () => {
     audio.pause();
     setIsPlaying(false);
-    setImageSrc(Piringans); // Mengubah gambar saat tombol pause ditekan
+    setImageSrc(Piringans); // Change image when pause button is clicked
     toggleAnimation(); 
   };
 
