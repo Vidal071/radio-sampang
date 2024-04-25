@@ -11,8 +11,8 @@
 
 .background-container {
   position: relative;
-  height: 100vh; /* Mengisi layar dengan konten */
-  background-size: cover; /* Menggunakan cover untuk memastikan latar belakang menyesuaikan diri dengan kontainer */
+  height: 100vh; 
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -29,9 +29,9 @@
 }
 
 .container {
-  max-width: 100%; /* Menggunakan maksimum lebar 100% agar kontainer responsif */
-  height: 100%; /* Mengisi layar dengan konten */
-  margin: 0 auto; /* Mengatur margin secara otomatis untuk memusatkan */
+  max-width: 100%; 
+  height: 100%; 
+  margin: 0 auto; 
   padding: 0 20px;
   position: relative;
 }
@@ -74,8 +74,7 @@
 
 .play-icon {
   color: white;
-  font-size: 48px; /* Adjust the size of the icon */
-}
+  font-size: 48px; 
 
 
 .play-button,
@@ -92,7 +91,7 @@
 .play-icon,
 .pause-icon {
   color: white;
-  font-size: 48px; /* Adjust the size of the icon */
+  font-size: 48px; 
 }
 .image-container {
   position: relative;
@@ -100,9 +99,10 @@
 
 .image-container img {
   display: block;
-  margin: 0 auto; /* Center the image horizontally */
+  margin: 0 auto; 
 }
 .responsive-image {
   max-width: 100%;
   height: auto;
+}
 }
